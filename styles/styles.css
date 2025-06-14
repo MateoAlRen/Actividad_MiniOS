@@ -311,16 +311,13 @@ body {
     display: grid;
     grid-template-columns: 0.2fr 1fr;
     grid-template-rows: auto;
-
     border-radius: 2rem;
     border: 0.2rem solid black;
     background-color: rgba(128, 128, 128, 0.566);
-
     padding: 1rem;
-    margin: 1rem auto; /* centrado horizontal */
-    width: 90%; /* adaptable al ancho */
-
-    max-height: 75vh; /* alto máximo relativo a la ventana */
+    margin: 1rem auto; 
+    width: 90%; 
+    max-height: 75vh;
     overflow: auto;
 }
 
