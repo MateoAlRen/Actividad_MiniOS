@@ -120,146 +120,6 @@ header {
     justify-content: space-evenly;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
     z-index: 100;
-}
-
-.taskbar-app {
-    background-color: #2e2e3e;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-.taskbar-app:hover {
-    background-color: #3e3e5e;
-    transform: translateY(-2px);
-}
-
-/*home Style*/
-
-.home_style{
-    background-image: url(/img/MiniOs_Background.webp);
-    backdrop-filter: blur(40px);
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    grid-template-rows: 1fr;
-    color: white;
-    padding: 0;
-    margin: 0;
-}
-
-/*Home Styles*/
-
-.user_init{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-    margin-top: 11rem;
-    padding-bottom: 15rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.user_pfp{
-    grid-column: 2;
-    grid-row: 2;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
-.user_welcome{
-    grid-column: 1/-1;
-    text-align: center;
-}
-
-.user_name{
-    grid-row: 3;
-    grid-column: 2;
-    text-align: center;
-}
-
-.user_home{
-    grid-row: 4;
-    grid-column: 2;
-    text-align: center;
-    background-color: #a3d6ff72;
-    border-radius: 25px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 0.2s;
-}
-
-.user_homeB{
-    all: unset;
-    cursor: pointer;
-    color: white;
-}
-
-.user_homeC{
-    text-decoration: none;
-    text-align: auto;
-}
-
-.user_home:hover{
-    background-color: #a3d6ff30;
-}
-
-/*MiniOs Section*/
-
-/*MiniOs Background*/
-
-.minios_background{    
-    background-image: url(/img/MiniOs_Background.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 0;
-    margin: 0;
-}
-
-/*Datetime*/
-
-header {
-    background-color: #000000a9;
-    padding: 20px;
-    text-align: right;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.datetime {
-    font-size: 16px;
-    color: #837b7b;
-}
-
-.fecha {
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-.hora {
-    color: #522358;
-}
-
-/*Barra de tareas*/
-
-.taskbar_style {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    background-color: #1e1e2f;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
-    z-index: 100;
     padding-top: 2rem;
 }
 
@@ -384,6 +244,67 @@ body {
     }
 }
 
+
+/*Calculator*/
+
+.calculator {
+      background: #403939;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      padding: 20px;
+      display: grid;
+      grid-template-rows: 80px auto;
+      width: 320px;
+    }
+
+    .screen {
+      background: #222;
+      color: white;
+      font-size: 2rem;
+      padding: 10px 15px;
+      border-radius: 12px;
+      text-align: right;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      background-color: #e0e0e0;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      padding: 20px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #d0d0d0;
+    }
+
+    .btn.operator {
+      background-color: #4db6ac;
+      color: white;
+    }
+
+    .btn.equal {
+      background-color: #ff7043;
+      color: white;
+      grid-column: span 2;
+    }
+
+    .btn.zero {
+      grid-column: span 2;
+    }
+
 /*HomeWorks*/
 
 
@@ -391,9 +312,8 @@ body {
     display: grid;
     grid-template-columns: 0.2fr 1fr;
     grid-template-rows: auto;
-    overflow: auto;
     border-radius: 2rem;
-    overflow: scroll;
+    overflow: hidden;
     padding: 1rem;
     border: 0.2rem solid black;
     background-color: rgba(128, 128, 128, 0.566);
@@ -402,29 +322,6 @@ body {
     height: auto;
     width: 85%;
 }
-
-  width: 300px; /* Define el ancho del contenedor */
-  height: 200px; /* Define la altura del contenedor */
-  
-  border: 1px solid black; /*  Por claridad visual */
-}
-
-/* Estilo opcional para la barra de desplazamiento (solo para webKit) */
-::-webkit-scrollbar {
-  width: 10px; /* Ancho de la barra */
-  background-color: #f5f5f5; /* Color de fondo */
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #888; /* Color del cursor */
-  border-radius: 5px; /* Forma del cursor */
-}
-
-/* Estilo opcional para la pista de desplazamiento */
-::-webkit-scrollbar-track {
-  background-color: #fff; /* Color de fondo de la pista */
-}
-
 .contenedor__item{
     grid-column: 1/2;
     grid-row: 1/2;
