@@ -14,7 +14,23 @@ En primera instancia, tenemos el inicio de la página del usuario en la cual se 
 - Y por último el bloqueo que te devuelve al inicio de usuario.
 
 
-El explorador de archivos esta compuesto por dos sesiones una que contiene los archivos del sistema operativo en el cual se puede navegar a cualquier archivo de MinOs y otra que contiene las carpetas que se encuentra en cada archivo con sus respectivos nombres
+El explorador de archivos esta compuesto por dos sesiones una que contiene los archivos del sistema operativo en el cual se puede navegar a cualquier archivo de MinOs y otra que contiene las carpetas que se encuentra en cada archivo con sus respectivos nombres.
 
 ![Image](https://github.com/user-attachments/assets/0d8aa62f-5418-4d63-a24d-9a111aeab50c)
+
+La aplicación del clima tiene cuatro secciones visuales en las cuales se puede observar la hora internacional, el pronóstico del día, alertas con respecto al clima y un botón de salida que te lleva de nuevo al escritorio.
+
+![Image](https://github.com/user-attachments/assets/52feb69c-7a9e-4dee-8119-c8c2edd483d9)
+
+Por último la aplicación de la calculadora en la cual podemos pasar el puntero del mouse para meros efectos visuales, pero sigue siendo interesante.
+
+![Image](https://github.com/user-attachments/assets/1c1f4a0c-1a46-41c6-b910-57b77312645c).
+
+Hecho por:
+- Mateo Algarin Rendon.
+- Jose Miguel Cortes Escobar.
+- Camilo Mitnick Gutiérrez.
+
+Clan: Berners Lee
+
 
