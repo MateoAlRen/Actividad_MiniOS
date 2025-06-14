@@ -13,3 +13,8 @@ En primera instancia, tenemos el inicio de la página del usuario en la cual se 
 - La tercera es una aplicación de carpetas con juegos dentro.
 - Y por último el bloqueo que te devuelve al inicio de usuario.
 
+
+El explorador de archivos esta compuesto por dos sesiones una que contiene los archivos del sistema operativo en el cual se puede navegar a cualquier archivo de MinOs y otra que contiene las carpetas que se encuentra en cada archivo con sus respectivos nombres
+
+![Image](https://github.com/user-attachments/assets/0d8aa62f-5418-4d63-a24d-9a111aeab50c)
+
