@@ -307,21 +307,23 @@ body {
 
 /*HomeWorks*/
 
-
 .contenedor_1{
     display: grid;
     grid-template-columns: 0.2fr 1fr;
     grid-template-rows: auto;
+
     border-radius: 2rem;
-    overflow: hidden;
-    padding: 1rem;
     border: 0.2rem solid black;
     background-color: rgba(128, 128, 128, 0.566);
-    backdrop-filter: blur(15px);
-    margin: auto;
-    height: auto;
-    width: 85%;
+
+    padding: 1rem;
+    margin: 1rem auto; /* centrado horizontal */
+    width: 90%; /* adaptable al ancho */
+
+    max-height: 75vh; /* alto máximo relativo a la ventana */
+    overflow: auto;
 }
+
 .contenedor__item{
     grid-column: 1/2;
     grid-row: 1/2;
